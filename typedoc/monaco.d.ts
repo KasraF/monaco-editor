@@ -3824,7 +3824,7 @@ declare namespace monaco.editor {
         showIcons?: boolean;
         /**
          * Enable or disable the suggest status bar.
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
          */
         showStatusBar?: boolean;
         /**
@@ -3836,7 +3836,7 @@ declare namespace monaco.editor {
         /**
          * Show details inline with the label. Defaults to true.
          */
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
         showInlineDetails?: boolean;
         /**
          * Show method-suggestions.
@@ -4106,7 +4106,7 @@ declare namespace monaco.editor {
         wrappingIndent = 117,
         wrappingStrategy = 118,
         showDeprecated = 119,
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
         editorClassName = 120,
         pixelRatio = 121,
         tabFocusMode = 122,
@@ -4119,7 +4119,7 @@ declare namespace monaco.editor {
         tabFocusMode = 123,
         layoutInfo = 124,
         wrappingInfo = 125
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
     }
     export const EditorOptions: {
         acceptSuggestionOnCommitCharacter: IEditorOption<EditorOption.acceptSuggestionOnCommitCharacter, boolean>;
@@ -4132,11 +4132,11 @@ declare namespace monaco.editor {
         autoClosingQuotes: IEditorOption<EditorOption.autoClosingQuotes, 'always' | 'languageDefined' | 'beforeWhitespace' | 'never'>;
         autoIndent: IEditorOption<EditorOption.autoIndent, EditorAutoIndentStrategy>;
         automaticLayout: IEditorOption<EditorOption.automaticLayout, boolean>;
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
         autoSurround: IEditorOption<EditorOption.autoSurround, EditorAutoSurroundStrategy>;
 =======
         autoSurround: IEditorOption<EditorOption.autoSurround, 'languageDefined' | 'never' | 'quotes' | 'brackets'>;
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
         stickyTabStops: IEditorOption<EditorOption.stickyTabStops, boolean>;
         codeLens: IEditorOption<EditorOption.codeLens, boolean>;
         codeLensFontFamily: IEditorOption<EditorOption.codeLensFontFamily, string>;
@@ -5975,7 +5975,7 @@ declare namespace monaco.languages {
      * the linked editing feature.
      */
     export interface LinkedEditingRangeProvider {
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
         /**
          * Provide a list of ranges that can be edited together.
          */
@@ -6005,7 +6005,7 @@ declare namespace monaco.languages {
          * A list of ranges that can be edited together. The ranges must have
          * identical length and text content. The ranges cannot overlap
          */
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
         ranges: IRange[];
         /**
          * An optional word pattern that describes valid contents for the given ranges.
@@ -7010,7 +7010,7 @@ declare module monaco.languages.typescript {
          * Get signature help items for the item at the given file and position.
          * @returns `Promise<typescript.SignatureHelpItems | undefined>`
          */
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
         getSignatureHelpItems(fileName: string, position: number): Promise<any | undefined>;
 
 =======
@@ -7019,7 +7019,7 @@ declare module monaco.languages.typescript {
             position: number,
             options: any
         ): Promise<any | undefined>;
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
         /**
          * Get quick info for the item at the given position in the file.
          * @returns `Promise<typescript.QuickInfo | undefined>`
@@ -7251,11 +7251,11 @@ declare module monaco.languages.json {
          */
         readonly schemaRequest?: SeverityLevel;
     }
-<<<<<<< HEAD
+<<<<<<< HEAD:monaco.d.ts
 
 =======
     export type SeverityLevel = 'error' | 'warning' | 'ignore';
->>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b
+>>>>>>> 92d6800a00070f876faad9ee7997e9efea7c5e4b:typedoc/monaco.d.ts
     export interface ModeConfiguration {
         /**
          * Defines whether the built-in documentFormattingEdit provider is enabled.
